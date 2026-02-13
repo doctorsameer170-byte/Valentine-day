@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Areeba 💖</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: white;
+}
+h1 {
+    margin-top: 100px;
+    font-size: 3em;
+}
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+#yes {
+    background-color: #ff4d6d;
+    color: white;
+}
+#no {
+    background-color: white;
+    color: #ff4d6d;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Areeba 💖<br>Will You Be My Valentine?</h1>
+
+<button id="yes" onclick="yesClick()">Yes 💖</button>
+<button id="no" onmouseover="moveButton()">No 😒</button>
+
+<script>
+function yesClick() {
+    document.body.innerHTML = "<h1>I Love You Forever ❤️</h1>";
+}
+
+function moveButton() {
+    var button = document.getElementById("no");
+    button.style.position = "absolute";
+    button.style.top = Math.random()*500 + "px";
+    button.style.left = Math.random()*500 + "px";
+}
+</script>
+
+</body>
+</html>
